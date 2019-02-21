@@ -1,0 +1,30 @@
+{
+    "folders": [
+        {
+            "name": "SonarTS-coverage-test",
+            "path": "."
+        }
+    ],
+    "extensions": {
+        "recommendations": [
+            "loiane.ts-extension-pack",
+            "waderyan.nodejs-extension-pack",
+            "orta.vscode-jest",
+            "sonarsource.sonarlint-vscode"
+        ],
+        "unwantedRecommendations": []
+    },
+    "settings": {
+        "tslint.alwaysShowStatus": true,
+        "tslint.autoFixOnSave": true,
+        "tslint.jsEnable": true,
+        "typescriptHero.imports.organizeOnSave": true,
+        "typescriptHero.imports.multiLineWrapThreshold": 120,
+        "prettier.tslintIntegration": true,
+        "jest.pathToJest": "npm test --",
+        "sonarlint.connectedMode.project": {
+            "serverId": "sonarcloud.io",
+            "projectKey": "SonarTS-coverage-test"
+        }
+    }
+}

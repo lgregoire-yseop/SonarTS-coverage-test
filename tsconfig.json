@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "baseUrl": ".",
+        "outDir": "build",
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "rootDir": "",
+        "sourceMap": true,
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "target": "es2017"
+    },
+    "exclude": ["node_modules", "target"],
+    "include": ["src"]
+}

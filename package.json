@@ -1,0 +1,27 @@
+{
+    "name": "SonarTS-coverage-test",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "test": "jest --env=jsdom --coverage --coverageDirectory=target/coverage --reporters=default --testResultsProcessor=jest-sonar-reporter"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/jest": "^24.0.6",
+        "jest": "^24.1.0",
+        "jest-sonar-reporter": "^2.0.0",
+        "ts-jest": "^24.0.0",
+        "tslint": "^5.12.1",
+        "tslint-consistent-codestyle": "^1.15.0",
+        "tslint-eslint-rules": "^5.4.0",
+        "tslint-sonarts": "^1.9.0",
+        "typescript": "^3.3.3"
+    },
+    "jest": {
+        "preset": "ts-jest"
+    },
+    "jestSonar": {
+        "reportPath": "target/tests-results",
+        "reportFile": "sonar-report.xml"
+    }
+}
