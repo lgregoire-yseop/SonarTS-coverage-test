@@ -1,9 +1,9 @@
 import { Foo } from './';
 
 describe('Foo', () => {
-    describe('baz', () => {
-        it('should return a `test`', () => {
-            expect(new Foo().baz()).toBe('test');
+    describe('bar', () => {
+        it('should return a concatenation of all parameters', () => {
+            expect(new Foo().bar('p1', 'p2', 'p3', 'p4')).toBe('p1 - p2 - p3 - p4');
         });
     });
 });
